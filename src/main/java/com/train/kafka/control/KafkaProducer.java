@@ -30,7 +30,7 @@ public class KafkaProducer {
     })
     public void sendMessage1(HttpServletRequest request) {
         String normalMessage = request.getParameter("normalMessage");
-        kafkaTemplate.send("topic1", normalMessage);
+        kafkaTemplate.send("testtopic", normalMessage);
     }
 
     @GetMapping("/kafka/callbackOne")

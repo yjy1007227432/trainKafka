@@ -10,7 +10,7 @@ public class CustomizePartitioner implements Partitioner {
     public int partition(String topic, Object key, byte[] keyBytes, Object value, byte[] valueBytes, Cluster cluster) {
         // 自定义分区规则(这里假设全部发到1号分区)
         // ......
-        return 1;
+        return 0;
     }
     @Override
     public void close() {
